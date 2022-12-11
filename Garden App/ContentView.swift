@@ -18,6 +18,7 @@ struct ContentView: View {
             HStack {
                 Spacer()
                 Text("Meet Gardener, your personal gardening companion, please enter information about outside to continue:").font(.largeTitle)
+                    .padding()
                 Spacer()
             }
             
@@ -53,7 +54,16 @@ struct ContentView: View {
         .background(Color.mint.edgesIgnoringSafeArea(.all))
     }
     
-    
+    struct StarLink: View {
+        let name: String
+        var body: some View{
+            NavigationLink("Next"){
+                Image(name)
+                    .resizable()
+                    .aspectRatio(contentMode:   .fill)
+            }
+        }
+    }
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
