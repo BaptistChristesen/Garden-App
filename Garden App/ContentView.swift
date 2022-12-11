@@ -20,17 +20,40 @@ struct ContentView: View {
                 Text("Meet Gardener, your personal gardening companion, please enter information about outside to continue:").font(.largeTitle)
                 Spacer()
             }
+            
+            //season setting section
+            
+            Text("What Season is it?")
             Picker("Current Season", selection: $season){
             Text("Spring").tag(1)
             Text("Summer").tag(2)
             Text("Fall").tag(3)
             Text("Winter").tag(4)
             }
+            .background(Color.white)
             .pickerStyle(SegmentedPickerStyle())
             .padding()
+            
+            //weather setting section
+            
+            Text("What is the Weather Outside?")
+            Picker("Weather Outside", selection: $weather){
+            Text("Sunny").tag(1)
+            Text("Partly Cloudy").tag(2)
+            Text("Cloudy").tag(3)
+            Text("Raining/Snowing").tag(4)
+            Text("Windy").tag(5)
+            }
+            .background(Color.white)
+            .padding()
+            
+            
+            
         }
         .background(Color.mint.edgesIgnoringSafeArea(.all))
     }
+    
+    
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
