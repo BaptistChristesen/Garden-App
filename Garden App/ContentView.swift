@@ -8,19 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var weather = 0
+    @State var temprature = 0
+    @State var season = 0
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+            Text("Gardener")
+            Spacer()
+            HStack {
+                Spacer()
+                Text("Test")
+                Spacer()
+            }
+            Spacer()
+        }.background(Color.mint)
+        
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
