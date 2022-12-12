@@ -13,7 +13,19 @@ struct job_selector_view: View {
     @State var season : Int
     @State var job : Int
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Please select your job:")
+        Picker("Job Possibilities", selection: $job){
+            Text("Weeding").tag(1)
+            Text("Watering").tag(2)
+            Text("Planting").tag(3)
+            Text("Translpanting").tag(4)
+            Text("Mowing").tag(5)
+            Text("Raking").tag(6)
+        }
+        .background(Color.mint.edgesIgnoringSafeArea(.all))
+        .pickerStyle(WheelPickerStyle())
+        .padding()
+        
     }
 }
 
