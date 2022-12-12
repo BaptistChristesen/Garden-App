@@ -50,6 +50,8 @@ struct ContentView: View {
             
             // next page
             
+            NavigationLink("Next", destination: job_selector_view(weather: weather, temprature: temprature, season: season, job: job))
+            
         }
         .background(Color.mint.edgesIgnoringSafeArea(.all))
     }

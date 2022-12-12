@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		307196D3294784E40072A035 /* job selector view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307196D2294784E40072A035 /* job selector view.swift */; };
 		30BFB46729365BD100616150 /* Garden_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BFB46629365BD100616150 /* Garden_AppApp.swift */; };
 		30BFB46929365BD100616150 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BFB46829365BD100616150 /* ContentView.swift */; };
 		30BFB46B29365BD800616150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BFB46A29365BD800616150 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		307196D2294784E40072A035 /* job selector view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "job selector view.swift"; sourceTree = "<group>"; };
 		30BFB46329365BD100616150 /* Garden App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garden App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BFB46629365BD100616150 /* Garden_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garden_AppApp.swift; sourceTree = "<group>"; };
 		30BFB46829365BD100616150 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				30BFB46629365BD100616150 /* Garden_AppApp.swift */,
 				30BFB46829365BD100616150 /* ContentView.swift */,
+				307196D2294784E40072A035 /* job selector view.swift */,
 				30BFB46A29365BD800616150 /* Assets.xcassets */,
 				30BFB46C29365BD800616150 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30BFB46929365BD100616150 /* ContentView.swift in Sources */,
+				307196D3294784E40072A035 /* job selector view.swift in Sources */,
 				30BFB46729365BD100616150 /* Garden_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
