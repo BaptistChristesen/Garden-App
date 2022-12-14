@@ -10,22 +10,25 @@ import SwiftUI
 struct job_selector_view: View {
     @State var weather : Int
     @State var temprature : Int
-    @State var season : Int
+    @State var season : String
     @State var job : Int
+    @State var finalResult : String
     var body: some View {
-        Text("Please select your job:")
-        Picker("Job Possibilities", selection: $job){
-            Text("Weeding").tag(1)
-            Text("Watering").tag(2)
-            Text("Planting").tag(3)
-            Text("Translpanting").tag(4)
-            Text("Mowing").tag(5)
-            Text("Raking").tag(6)
+        VStack{
+            if season == 1{
+                finalResult += ""
+            }
+            else if season == 2{
+                finalResult += ""
+            }
+            else if season == 3{
+                finalResult += ""
+            }
+            else if season == 4{
+                finalResult += ""
+            }
+            
         }
-        .background(Color.mint.edgesIgnoringSafeArea(.all))
-        .pickerStyle(WheelPickerStyle())
-        .padding()
-        
     }
 }
 

@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     @State var weather = 0
     @State var temprature = 0
-    @State var season = 0
+    @State var season = ""
     @State var job = 0
+    @State var finalResult = ""
     var body: some View {
         VStack {
             Spacer()
@@ -21,47 +22,72 @@ struct ContentView: View {
                     .padding()
                 Spacer()
             }
-            
-            //season setting section
-            
-            Text("What Season is it?")
-            Picker("Current Season", selection: $season){
-            Text("Spring").tag(1)
-            Text("Summer").tag(2)
-            Text("Fall").tag(3)
-            Text("Winter").tag(4)
-            }
-            .background(Color.white)
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-            
-            //weather setting section
-            
-            Text("What is the Weather Outside?")
-            Picker("Weather Outside", selection: $weather){
-            Text("Sunny").tag(1)
-            Text("Partly Cloudy").tag(2)
-            Text("Cloudy").tag(3)
-            Text("Raining/Snowing").tag(4)
-            Text("Windy").tag(5)
-            }
-            .background(Color.white)
-            .padding()
-            
-            // next page
-            NavigationView{
-                VStack{
-                    
-                    NavigationLink("Next", destination: job_selector_view(weather: weather, temprature: temprature, season: season, job: job))
-                        
-                        
+                
+                //season setting section
+                
+                Text("What Season is it?")
+                Picker("Current Season", selection: $season){
+                    Text("Spring").tag(1)
+                    Text("Summer").tag(2)
+                    Text("Fall").tag(3)
+                    Text("Winter").tag(4)
                 }
-               
-            }
+                .background(Color.white)
+                
+                //weather setting section
+                
+                Text("What is the Weather Outside?")
+                Picker("Weather Outside", selection: $weather){
+                    Text("Sunny").tag("Sunny")
+                    Text("Partly Cloudy").tag("Partly Cloudy")
+                    Text("Cloudy").tag("Cloudy")
+                    Text("Raining/Snowing").tag("Raining or Snowing")
+                    Text("Windy").tag("Windy")
+                }
+                .background(Color.white)
+          
+                //job selector
+                
+                Text("What job are you looking to do?")
+                Picker("Job Selector", selection: $job){
+                    Text("Weeding").tag(1)
+                    Text("Raking").tag(2)
+                    Text("Watering").tag(3)
+                    Text("Planting").tag(4)
+                    Text("Trans-Planting").tag(5)
+                    Text("Mowing").tag(6)
+                }
+                .background(Color.white)
+                
+                //temprature setter
+                
+                Text("What temprature is it today? (Faranheit)")
+                Picker("Temp Setter", selection: $temprature){
+                    Text("< 30").tag(1)
+                    Text("30 - 50").tag(2)
+                    Text("50 - 70").tag(3)
+                    Text("70 - 90").tag(4)
+                    Text(">90 ").tag(5)
+                }
+                .background(Color.white)
+                
            
+         //next page
+            //NavigationView{
+            //    VStack{
+            //
+            //        NavigationLink("Next", destination: job_selector_view(weather: weather, temprature: temprature, season: season, job: job))
+            //
+            //
+            //    }
+            //
+            //}
+
         }
         .background(Color.mint.edgesIgnoringSafeArea(.all))
     }
+    
+    
     
     
     struct ContentView_Previews: PreviewProvider {
@@ -69,4 +95,6 @@ struct ContentView: View {
             ContentView()
         }
     }
+    // next page
+
 }
