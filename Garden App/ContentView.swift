@@ -33,6 +33,7 @@ struct ContentView: View {
                     Text("Winter").tag(4)
                 }
                 .background(Color.white)
+                .padding()
                 
                 //weather setting section
                 
@@ -45,6 +46,7 @@ struct ContentView: View {
                     Text("Windy").tag("Windy")
                 }
                 .background(Color.white)
+                .padding()
           
                 //job selector
                 
@@ -58,6 +60,7 @@ struct ContentView: View {
                     Text("Mowing").tag(6)
                 }
                 .background(Color.white)
+                .padding()
                 
                 //temprature setter
                 
@@ -70,6 +73,7 @@ struct ContentView: View {
                     Text(">90 ").tag(5)
                 }
                 .background(Color.white)
+                .padding()
                 
            
          //next page

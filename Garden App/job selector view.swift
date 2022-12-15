@@ -15,25 +15,28 @@ struct job_selector_view: View {
     @State var finalResult : String
     var body: some View {
         VStack{
-            if season == 1{
-                finalResult += ""
-            }
-            else if season == 2{
-                finalResult += ""
-            }
-            else if season == 3{
-                finalResult += ""
-            }
-            else if season == 4{
-                finalResult += ""
-            }
             
+            
+        }
+    }
+    func result (weather: Int, temprature: Int, job: Int, finalResult: String, season: String){
+        if season == "summer"{
+            //finalResult += ""
+        }
+        else if season == "spring"{
+            //finalResult += ""
+        }
+        else if season == "fall"{
+            //finalResult += ""
+        }
+        else if season == "winter"{
+            //finalResult += ""
         }
     }
 }
 
 struct job_selector_view_Previews: PreviewProvider {
     static var previews: some View {
-        job_selector_view(weather: 0, temprature: 0, season: 0, job: 0)
+        job_selector_view(weather: 0, temprature: 0, season: "", job: 0, finalResult: "" )
     }
 }
