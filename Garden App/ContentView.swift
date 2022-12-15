@@ -12,7 +12,6 @@ struct ContentView: View {
     @State var temprature = 0
     @State var season = ""
     @State var job = 0
-    @State var finalResult = ""
     var body: some View {
         VStack {
             Spacer()
@@ -70,25 +69,15 @@ struct ContentView: View {
                     Text("30 - 50").tag(2)
                     Text("50 - 70").tag(3)
                     Text("70 - 90").tag(4)
-                    Text(">90 ").tag(5)
+                    Text("> 90 ").tag(5)
                 }
                 .background(Color.white)
                 .padding()
-                
-           
-         //next page
-            //NavigationView{
-            //    VStack{
-            //
-            //        NavigationLink("Next", destination: job_selector_view(weather: weather, temprature: temprature, season: season, job: job))
-            //
-            //
-            //    }
-            //
-            //}
-
+            
         }
         .background(Color.mint.edgesIgnoringSafeArea(.all))
+              NavigationLink("Next", destination: job_selector_view(weather: weather, temprature: temprature, season: season, job: job))
+        
     }
     
     
