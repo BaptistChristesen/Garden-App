@@ -83,31 +83,20 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
     //if its summer
     else if(season == 2){
         if(weather == 1){
-            if(job == 1){
-                finalMessage = ""
-            }
-            else if(job == 2){
-                finalMessage = ""
-            }
-            else if(job == 3){
-                finalMessage = ""
-            }
-            else{
-                finalMessage = "Leaves shouldn't be falling during your summer months, but if they are, now might not be a good time. It's most likely too hot to be doing a job out in the sun like raking, and with no cloud cover you'll risk sunburn or heatstroke. Try again another day."
-            }
+            finalMessage = "Try again another day. Summer heat and direct sun exposure could harm you, so no matter what job you want to do you should wait for a cooler day."
         }
         else if(weather == 2){
             if(job == 1){
-                finalMessage = ""
+                finalMessage = "Today is a perfect day for weeding, as the cloud coverage would will keep you safe from the elements and the heat."
             }
             else if(job == 2){
-                finalMessage = ""
+                finalMessage = "Does a better day to mow exist? Cloud coverage and warm weather!?!? You cannot pass up mowing on a day like this!"
             }
             else if(job == 3){
-                finalMessage = ""
+                finalMessage = "Today is a great day to water, since your plants shouldnt dry up too fast and you wont heat yourself up too much. Take advantage of this waether and water those plants!"
             }
             else{
-                finalMessage = ""
+                finalMessage = "Leaves shouldn't be falling during your summer months, but if they are, now is a great time. It's warm enough to be enjoyable and the clouds provide you with the shade you trees will be lacking!"
             }
         }
         else if(weather == 3){
@@ -120,16 +109,16 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
         }
         else{
             if(job == 1){
-                finalMessage = ""
+                finalMessage = "A cool breeze is just the thing you need to have a relaxing afternoon weeding. Make sure to stay hydrated and this should be just fine to do"
             }
             else if(job == 2){
-                finalMessage = ""
+                finalMessage = "A cool breeze is perfect for summer mow. You'll feel almost as nice as you're making your lawn look. Be sure not to be in the sun for too long though."
             }
             else if(job == 3){
-                finalMessage = ""
+                finalMessage = "You should be alright to water, but now it is very important to water base of the plant. Any extra weight on the stems or flowers could cause your more delicate plants to break in the wind."
             }
             else{
-                finalMessage = ""
+                finalMessage = "Try raking again later, while there should be no reason to rake in the summer if you have too today isn't great since the wind is going to keep you from being able to keep your leaves in one place, or even grab them in the first place."
             }
         }
         
