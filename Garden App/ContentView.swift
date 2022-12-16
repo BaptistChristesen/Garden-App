@@ -17,6 +17,7 @@ struct ContentView: View {
             VStack {
                 HStack {
                     Spacer()
+                    //intro text
                     Text("Meet Gardener, your personal gardening companion, please enter information about the weather to continue:").font(.largeTitle)
                         .padding()
                     Spacer()
@@ -56,13 +57,12 @@ struct ContentView: View {
                     Text("Mowing").tag(2)
                 }
                 .background(Color.white)
-                NavigationLink("Next Page", destination: job_selector_view(weather: weather, temprature: temprature, season: season, job: job))
+                //gets you to the result page
+                NavigationLink("Can I Do My Job Today?", destination: job_selector_view(weather: weather, temprature: temprature, season: season, job: job))
                     .background(Color.white)
                     .padding()
                 
-            }
-            
-            .background(Color.mint)
+            }.background(Color.mint)
         }
         
     }
