@@ -31,7 +31,7 @@ struct job_selector_view: View {
             else if(job == 3){
                Image("Water")
             }
-            else{
+            else if(job == 4){
                 Image("Rake")
             }
             
@@ -39,8 +39,12 @@ struct job_selector_view: View {
     }
 }
 func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
-   //if spring
-    if(season == 1){
+   //if no info
+    if(season == 0 || weather == 0 || job == 0){
+            return "Please go back and enter your information."
+    }
+    //if spring
+    else if(season == 1){
         //and if its sunny
         if(weather == 1){
             if(job == 1){
@@ -203,10 +207,10 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
         }
     }
     //if its winter
-    else{
+    else if(season == 4){
         return "Unfortunately, winter is not a very good time for gardening. Wait a few mmonths, and then come on back."
     }
-    return "If you've encountered this message you've done the inpossible! Congrats!"
+    return "Please go back and enter your information."
 }
 struct job_selector_view_Previews: PreviewProvider {
     static var previews: some View {
