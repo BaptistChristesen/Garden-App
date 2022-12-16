@@ -56,32 +56,26 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
         }
         //and if its raining or snowing
         else if(weather == 3){
-            if(job == 1){
-                finalMessage = "Rain, rain, go away. Try again, another day. Unless you want to get wet- then have at it."
-            }
-            else if(job == 2){
-                finalMessage = "Rain, rain, go away. Try again, another day. Unless you want to get wet- then have at it."
-            }
-            else if(job == 3){
-                finalMessage = "Believe it or not, there is no need. The rain will water your plants for you, and make your day that much easier."
+            if(job != 3){
+                finalMessage = "Rain, rain go away, try your job another day."
             }
             else{
-                finalMessage = "Rain, rain, go away. Try again, another day. Unless you want to get wet- then have at it."
+                finalMessage = "Good news: nature is doing the work for you today, so you can sit back, relax, and let your garden be watered in peace."
             }
         }
         //and if its windy
         else{
             if(job == 1){
-                finalMessage = ""
+                finalMessage = "Weeding is going to be fine, just make sure you have something to put the into so they dont blow their seeds into your garden. You don't want to make more work for yourself, do you?"
             }
             else if(job == 2){
-                finalMessage = ""
+                finalMessage = "Mowing is a good idea today, the cuttings will most likely even clear themsleves for you. Talk about killing two birds with one stone."
             }
             else if(job == 3){
-                finalMessage = "As long as you bring yourself a sweatshirt you should be alright, but now it is very important to water base of the plant. Any extra weight on the stems or flowers could cause your more delicate plants to break in the wind."
+                finalMessage = "As long as you bring yourself a sweatshirt you should be alright to water, but now it is very important to water base of the plant. Any extra weight on the stems or flowers could cause your more delicate plants to break in the wind."
             }
             else{
-                finalMessage = "Try again later, unfortunately the wind is going to keep you from being able to keep your leaves in one place, or even grab them in the first place."
+                finalMessage = "Try raking again later, unfortunately the wind is going to keep you from being able to keep your leaves in one place, or even grab them in the first place."
             }
         }
         
@@ -117,17 +111,11 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
             }
         }
         else if(weather == 3){
-            if(job == 1){
-                finalMessage = ""
-            }
-            else if(job == 2){
-                finalMessage = ""
-            }
-            else if(job == 3){
-                finalMessage = ""
+            if(job != 3){
+                finalMessage = "Rain, rain go away, try your job another day."
             }
             else{
-                finalMessage = ""
+                finalMessage = "Good news: nature is doing the work for you today, so you can sit back, relax, and let your garden be watered in peace."
             }
         }
         else{
@@ -150,58 +138,52 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
     else if(season == 3){
         if(weather == 1){
             if(job == 1){
-                finalMessage = ""
+                finalMessage = "Probably the last weeding of the season, so if its sunny, take advantage of the weather and get this out of the way today!"
             }
             else if(job == 2){
-                finalMessage = ""
+                finalMessage = "Not to many days to mow left, take advantage of the nice weather beofre it goes away for the season!"
             }
             else if(job == 3){
-                finalMessage = ""
+                finalMessage = "Fall is a fairly wet season, but if you have had the bad luck of experiencing a dry spell take advantage of the weather and water those plants!"
             }
             else{
-                finalMessage = ""
+                finalMessage = "Raking! A staple of fall weather. If you've got leaves on the ground, the weather is perfect for a little raking!"
             }
         }
         else if(weather == 2){
             if(job == 1){
-                finalMessage = ""
+                finalMessage = "Probably the last weeding of the season, it's not too cold yet, so take advantage of the weather and get this out of the way today!"
             }
             else if(job == 2){
-                finalMessage = ""
+                finalMessage = "Typical fall day calls for typical fall activities- and unfortunately typical fall work. Todays a perfectly fine day to mow the lawn, and on the bright side it'll be one of the last of the season."
             }
             else if(job == 3){
-                finalMessage = ""
+                finalMessage = "Fall is a fairly wet season, but if you have had the bad luck of experiencing a dry spell take advantage of the weather and water those plants!"
             }
             else{
-                finalMessage = ""
+                finalMessage = "Raking! A staple of fall weather. If you've got leaves on the ground, go and get rid of them! Make sure to bring a sweatshirt though."
             }
         }
         else if(weather == 3){
-            if(job == 1){
-                finalMessage = ""
-            }
-            else if(job == 2){
-                finalMessage = ""
-            }
-            else if(job == 3){
-                finalMessage = ""
+            if(job != 3){
+                finalMessage = "Rain, rain go away, try your job another day."
             }
             else{
-                finalMessage = ""
+                finalMessage = "Good news: nature is doing the work for you today, so you can sit back, relax, and let your garden be watered in peace."
             }
         }
         else{
             if(job == 1){
-                finalMessage = ""
+                finalMessage = "Weeding is going to be fine, just make sure you have something to put the into so they dont blow their seeds into your garden. You don't want to make more work for yourself, do you?"
             }
             else if(job == 2){
-                finalMessage = ""
+                finalMessage = "Mowing will be a little chilly- so bring a sweatshirt and dont get any leaves in your face and you'll be just fine!"
             }
             else if(job == 3){
-                finalMessage = ""
+                finalMessage = "As long as you bring yourself a sweatshirt you should be alright to water, but now it is very important to water base of the plant. Any extra weight on the stems or flowers could cause your more delicate plants to break in the wind."
             }
             else{
-                finalMessage = ""
+                finalMessage = "Raking! A staple of fall weather. If you've got leaves on the ground, go and get rid of them! Make sure to bring a sweatshirt though."
                 
             }
         }
