@@ -39,10 +39,10 @@ struct ContentView: View {
                 
                 Text("What is the Weather Outside?")
                 Picker("Weather Outside", selection: $weather){
-                    Text("Sunny").tag("1")
-                    Text("Cloudy").tag("2")
-                    Text("Raining").tag("3")
-                    Text("Windy").tag("4")
+                    Text("Sunny").tag(1)
+                    Text("Cloudy").tag(2)
+                    Text("Raining").tag(3)
+                    Text("Windy").tag(4)
                 }
                 .background(Color.white)
                 

@@ -18,9 +18,10 @@ struct job_selector_view: View {
             HStack{
                 Spacer()
                 Text("\((result(season:season, temprature:temprature, job:job, weather:weather)))")
-                    .font(.largeTitle)
+                    .font(.headline)
                 Spacer()
             }
+            Spacer()
             if(job == 1){
                 Image("Weed")
             }
@@ -51,7 +52,7 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
             else if(job == 3){
                 return "Watering is very important for your garden, especially today. The sun being out can cause your polants to dry up quickly, so it is vital to go out and water your plants."
             }
-            else{
+            else if(job == 4){
                 return "Leaves shouldn't be falling during your summer months, but if they are, now is a great time. It's not too cold out and the sun will be good for your health, just remember to wear a hat."
             }
         }
@@ -66,7 +67,7 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
             else if(job == 3){
                 return "Watering is very important for your plants' health, so get out there and get started! You won't get too hot, and your plants wont dry up on you either. It can be a bit of a nuisance, but it will be worth it!"
             }
-            else{
+            else if(job == 4){
                 return "Leaves shouldn't be falling during your summer months, but if they are, now is a great time. Not too hot, not too cold, and you're beautifying your yard."
             }
         }
@@ -90,7 +91,7 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
             else if(job == 3){
                 return "As long as you bring yourself a sweatshirt you should be alright to water, but now it is very important to water base of the plant. Any extra weight on the stems or flowers could cause your more delicate plants to break in the wind."
             }
-            else{
+            else if(job == 4){
                 return "Try raking again later, unfortunately the wind is going to keep you from being able to keep your leaves in one place, or even grab them in the first place."
             }
         }
@@ -113,7 +114,7 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
             else if(job == 3){
                 return "Today is a great day to water, since your plants shouldnt dry up too fast and you wont heat yourself up too much. Take advantage of this waether and water those plants!"
             }
-            else{
+            else if(job == 4){
                 return "Leaves shouldn't be falling during your summer months, but if they are, now is a great time. It's warm enough to be enjoyable and the clouds provide you with the shade you trees will be lacking!"
             }
         }
@@ -137,7 +138,7 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
             else if(job == 3){
                 return "You should be alright to water, but now it is very important to water base of the plant. Any extra weight on the stems or flowers could cause your more delicate plants to break in the wind."
             }
-            else{
+            else if(job == 4){
                 return "Try raking again later, while there should be no reason to rake in the summer if you have too today isn't great since the wind is going to keep you from being able to keep your leaves in one place, or even grab them in the first place."
             }
         }
@@ -156,7 +157,7 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
             else if(job == 3){
                 return "Fall is a fairly wet season, but if you have had the bad luck of experiencing a dry spell take advantage of the weather and water those plants!"
             }
-            else{
+            else if(job == 4){
                 return "Raking! A staple of fall weather. If you've got leaves on the ground, the weather is perfect for a little raking!"
             }
         }
@@ -171,7 +172,7 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
             else if(job == 3){
                 return "Fall is a fairly wet season, but if you have had the bad luck of experiencing a dry spell take advantage of the weather and water those plants!"
             }
-            else{
+            else if(job == 4){
                 return "Raking! A staple of fall weather. If you've got leaves on the ground, go and get rid of them! Make sure to bring a sweatshirt though."
             }
         }
@@ -195,7 +196,7 @@ func result (season:Int, temprature:Int, job:Int, weather:Int) -> String {
             else if(job == 3){
                 return "As long as you bring yourself a sweatshirt you should be alright to water, but now it is very important to water base of the plant. Any extra weight on the stems or flowers could cause your more delicate plants to break in the wind."
             }
-            else{
+            else if(job == 4){
                 return "Raking! A staple of fall weather. If you've got leaves on the ground, go and get rid of them! Make sure to bring a sweatshirt though."
                 
             }
